@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --surface: 60 11% 97%;
+    --surface-alt: 60 6% 95%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Indigo industrial accent */
+    --primary: 239 64% 42%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 240 60% 35%;
+    --primary-tint: 226 100% 96%;
+
+    --secondary: 60 11% 97%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 60 6% 95%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 226 100% 96%;
+    --accent-foreground: 239 64% 42%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 239 64% 42%;
+
+    --text-primary: 222 47% 11%;
+    --text-secondary: 215 25% 31%;
+    --text-muted: 215 20% 65%;
+
+    --radius: 0.25rem;
+
+    --shadow-card: 0 1px 3px 0 hsl(222 47% 11% / 0.04), 0 1px 2px -1px hsl(222 47% 11% / 0.04);
+    --shadow-lift: 0 12px 32px -12px hsl(239 64% 42% / 0.18), 0 4px 12px -4px hsl(222 47% 11% / 0.06);
+    --shadow-nav: 0 1px 0 0 hsl(214 32% 91%), 0 4px 16px -8px hsl(222 47% 11% / 0.08);
+
+    --grid-blueprint: linear-gradient(hsl(239 64% 42% / 0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, hsl(239 64% 42% / 0.05) 1px, transparent 1px);
+
+    --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Barlow Condensed', 'Barlow', sans-serif;
+    letter-spacing: -0.01em;
+  }
+  .font-label {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+  }
+}
+
+@layer utilities {
+  .bg-blueprint {
+    background-image: var(--grid-blueprint);
+    background-size: 40px 40px;
+  }
+  .bg-surface { background-color: hsl(var(--surface)); }
+  .bg-surface-alt { background-color: hsl(var(--surface-alt)); }
+  .text-primary-ink { color: hsl(var(--text-primary)); }
+  .text-secondary-ink { color: hsl(var(--text-secondary)); }
+  .text-muted-ink { color: hsl(var(--text-muted)); }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s var(--transition-smooth), transform 0.8s var(--transition-smooth);
+    will-change: opacity, transform;
+  }
+  .reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-link {
+    position: relative;
+    transition: color 0.2s ease;
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: hsl(var(--primary));
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.35s var(--transition-smooth);
+  }
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .product-card {
+    transition: transform 0.4s var(--transition-smooth), box-shadow 0.4s var(--transition-smooth), border-color 0.3s ease;
+    border-left: 2px solid transparent;
+  }
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lift);
+    border-left-color: hsl(var(--primary));
+  }
+
+  .ticker-track {
+    animation: ticker 40s linear infinite;
+  }
+  .belt-dash {
+    stroke-dasharray: 8 8;
+    animation: belt-move 1.4s linear infinite;
+  }
+  .pattern-diag {
+    background-image: repeating-linear-gradient(
+      45deg,
+      hsl(0 0% 100% / 0.08) 0,
+      hsl(0 0% 100% / 0.08) 1px,
+      transparent 1px,
+      transparent 14px
+    );
+  }
+  .page-fade {
+    animation: page-fade 0.5s var(--transition-smooth) both;
+  }
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes belt-move {
+  to { stroke-dashoffset: -16; }
+}
+@keyframes page-fade {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}

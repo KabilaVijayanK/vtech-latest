@@ -1,0 +1,10 @@
+export { HeroSection } from "./HeroSection";
+export { PillarsSection } from "./PillarsSection";
+export { AboutPreviewSection } from "./AboutPreviewSection";
+export { StatsSection } from "./StatsSection";
+export { FeaturedProductsSection } from "./FeaturedProductsSection";
+export { IndustriesSection } from "./IndustriesSection";
+export { ServicesPreviewSection } from "./ServicesPreviewSection";
+export { default as CustomersSection } from "./CustomersSection";
+export { TestimonialSection } from "./TestimonialSection";
+export { CtaSection } from "./CtaSection";
