@@ -68,10 +68,31 @@ export const Footer = ({ onNavigate }: { onNavigate: (p: PageKey) => void }) => 
         </ul>
       </div>
     </div>
-    <div className="border-t border-white/10">
-      <div className="container py-6 text-center text-xs text-white/50">
-        © 2025 V Tech Industries. All rights reserved. Chennai, India.
-      </div>
-    </div>
+   <div className="container py-6 text-center text-xs text-white/50 space-y-2">
+  
+  <div>
+    © 2026 V Tech Industries. All rights reserved. Chennai, India.
+  </div>
+
+  {/* 👇 New links */}
+  <div className="flex justify-center gap-4 text-white/60">
+    <button 
+      // onClick={() => onNavigate("terms")}
+      className="hover:text-primary transition-colors"
+    >
+      Terms & Conditions
+    </button>
+
+    <span>|</span>
+
+    <button 
+      // onClick={() => onNavigate("")}
+      className="hover:text-primary transition-colors"
+    >
+      Privacy Policy
+    </button>
+  </div>
+
+</div>
   </footer>
 );

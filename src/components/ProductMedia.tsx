@@ -14,7 +14,7 @@ export const ProductMedia = ({ product, className = "" }: { product: Product; cl
 
   if (product.image && !errored) {
     return (
-      <div className={`relative w-full h-full overflow-hidden bg-surface ${className}`}>
+      <div className={`relative w-full h-full overflow-hidden ${className}`}>
         <img
           src={product.image}
           alt={product.name}

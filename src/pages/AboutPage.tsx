@@ -3,15 +3,19 @@ import { COMPANY, PageKey } from "@/lib/site";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { useInView, useCountUp } from "@/hooks/use-scroll";
 
-export const PageHero = ({ title, subtitle }: { title: string; subtitle?: string }) => (
-  <section className="relative bg-primary text-primary-foreground pt-36 pb-20 overflow-hidden">
+export const PageHero = ({ title, subtitle, backgroundImage = "/about.png" }: { title: string; subtitle?: string; backgroundImage?: string }) => (
+  <section className="relative bg-primary text-primary-foreground pt-36 pb-20 overflow-hidden" style={{
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}>
+    <div className="absolute inset-0 bg-black/65" aria-hidden />
     <div className="absolute inset-0 opacity-30 pattern-diag" aria-hidden />
-    <div className="absolute inset-0 bg-blueprint opacity-10" aria-hidden />
-    <div className="container relative">
+    <div className="container relative z-10">
       <Reveal>
-        <span className="font-label text-[11px] text-white/70">V Tech Industries</span>
-        <h1 className="font-display font-bold text-5xl md:text-7xl mt-3 leading-[0.95]">{title}</h1>
-        {subtitle && <p className="mt-4 max-w-2xl text-white/80 text-lg">{subtitle}</p>}
+        <span className="font-label text-[11px] text-white/90">V Tech Industries</span>
+        <h1 className="font-display font-bold text-5xl md:text-7xl mt-3 leading-[0.95] drop-shadow-lg">{title}</h1>
+        {subtitle && <p className="mt-4 max-w-2xl text-white/90 text-lg drop-shadow">{subtitle}</p>}
       </Reveal>
     </div>
   </section>

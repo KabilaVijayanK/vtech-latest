@@ -37,6 +37,7 @@ export const ServicesPage = ({ onNavigate }: { onNavigate: (p: PageKey) => void 
     <PageHero
       title="OUR SERVICES"
       subtitle="Design, build, install, maintain — everything you need to run a reliable conveying line, under one roof."
+      backgroundImage="/services.png"
     />
 
     <section className="py-24 bg-white">

@@ -199,7 +199,7 @@ export const IndustriesSection = ({ onNavigate }: IndustriesSectionProps) => {
         className="py-20 bg-[#f5f6fa]"
         style={{ fontFamily: "'Barlow', sans-serif" }}
       >
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+        <div className="max-w-8xl mx-auto px-6 lg:px-8">
 
           {/* ── Header ──────────────────────────────────────────────────── */}
           <div

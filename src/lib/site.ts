@@ -115,7 +115,7 @@ export const PRODUCTS: Product[] = [
     category: "Automated",
     short: "Integrated bag sealing and conveying system for packaging and FMCG lines.",
     features: ["Inline stitch", "Adjustable height", "PLC interlock", "FMCG ready"],
-    image: "/products/bag-closing.png",
+    image: "/products/bagclose.png",
   },
   {
     id: "hinge-conveyor",

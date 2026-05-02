@@ -27,6 +27,7 @@ export const ProductsPage = ({ onNavigate }: { onNavigate: (p: PageKey) => void 
       <PageHero
         title="OUR PRODUCT RANGE"
         subtitle="Pre-engineered and custom conveyors for every industrial application."
+        backgroundImage="/product.png"
       />
 
       <section className="py-10 bg-white border-b border-border  top-[50px] z-30 bg-white/95 backdrop-blur">

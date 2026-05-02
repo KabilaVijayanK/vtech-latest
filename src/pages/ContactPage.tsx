@@ -47,7 +47,7 @@ export const ContactPage = () => {
 
   return (
     <div className="page-fade">
-      <PageHero title="GET IN TOUCH" subtitle="Tell us about your line. Our engineers reply within one working day." />
+      <PageHero title="GET IN TOUCH" subtitle="Tell us about your line. Our engineers reply within one working day."  backgroundImage="/contact.png"/>
 
       <section className="py-20 bg-white">
         <div className="container">
