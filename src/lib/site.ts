@@ -33,7 +33,10 @@ export type Product = {
   name: string;
   category: ProductCategory;
   short: string;
+  description?: string;
   features: string[];
+  specifications?: string[];
+  applications?: string[];
   /** Path to image under /public. If null, the SVG fallback is used. */
   image: string | null;
 };
@@ -122,15 +125,110 @@ export const PRODUCTS: Product[] = [
     name: "Hinged Belt Chip Conveyor",
     category: "Conveyors",
     short: "Heavy-duty chip handling conveyor for machining industries.",
-    features: ["Low maintenance", "Easy installation", "Durable", "Custom sizes"],
+    description: "We are counted amongst the prominent manufacturers of world-class hinged belt chip conveyors. These portable conveyors are carefully developed using quality materials in compliance with set quality standards. Our hinged belt chip conveyors do not require additional maintenance and are very easy to install and operate. Our collection is available in different specifications as per your requirements.",
+    features: ["Low maintenance", "Easy installation", "Durable", "Custom sizes", "Heavy-duty construction", "Chip-resistant design"],
+    specifications: [
+      "Conveyor Chain Size: 1.5 to 6 Inch Available",
+      "Conveyor Max. Width: 1500 mm",
+      "Material: Carbon Steel / Stainless Steel"
+    ],
+    applications: ["Machining industries", "Press shops", "Chip handling", "Metal cutting operations"],
     image: "/products/hinge-conveyor.jpg",
   },
+  {
+  id: "inspection-table",
+  name: "Inspection Table",
+  category: "Specialty",
+  short: "Ergonomic table for manual inspection and quality control processes.",
+  features: ["Sturdy structure", "Operator friendly", "Customizable size", "Smooth surface"],
+  image: "/products/inspection-table.png"
+},
+{
+  id: "bin-elevator",
+  name: "Bin Elevator",
+  category: "Material Handling",
+  short: "System for lifting and transporting bins vertically.",
+  features: ["High load capacity", "Safe lifting", "Compact design", "Durable construction"],
+  image: "/products/bin-elevator.png"
+},
+{
+  id: "burr-sorter",
+  name: "Burr Sorter",
+  category: "Automated",
+  short: "Machine used for separating burrs from finished components.",
+  features: ["High precision", "Efficient sorting", "Low maintenance", "Continuous operation"],
+  image: "/products/burr-sorter.png"
+},
+{
+  id: "bin-moving-trolley",
+  name: "Bin Moving Trolley",
+  category: "Material Handling",
+  short: "Trolley designed for easy movement of bins within facilities.",
+  features: ["Heavy-duty wheels", "Easy maneuvering", "Robust frame", "User friendly"],
+  image: "/products/bin-trolley.png"
+},
+{
+  id: "tools-handling-trolley",
+  name: "Tools Handling Trolley",
+  category: "Material Handling",
+  short: "Mobile trolley for organizing and transporting tools.",
+  features: ["Multiple compartments", "Strong build", "Easy mobility", "Space efficient"],
+  image: "/products/tools-trolley.png"
+},
+{
+  id: "pvc-belt",
+  name: "PVC Belt Conveyor",
+  category: "Conveyors",
+  short: "Lightweight conveyor for smooth material handling applications.",
+  features: ["Flexible belt", "Low noise", "Energy efficient", "Easy maintenance"],
+  image: "/products/pvc-belt.png"
+},
+{
+  id: "metal-sorting-conveyor",
+  name: "Conveyor System for Metal Sorting",
+  category: "Automated",
+  short: "Automated conveyor system designed for sorting metal components.",
+  features: ["Accurate sorting", "High speed", "Sensor integration", "Durable design"],
+  image: "/products/metal-sorting.png"
+},
+{
+  id: "step-feeder",
+  name: "Step Feeder",
+  category: "Automated",
+  short: "Feeding system for controlled and oriented part supply.",
+  features: ["Gentle handling", "Low noise", "High efficiency", "Compact design"],
+  image: "/products/step-feeder.png"
+},
+{
+  id: "silent-roller-chain",
+  name: "Silent Roller Chain Conveyor",
+  category: "Conveyors",
+  short: "Low-noise conveyor for smooth and quiet operations.",
+  features: ["Silent operation", "High durability", "Smooth transfer", "Low vibration"],
+  image: "/products/silent-roller.png"
+},
+{
+  id: "vertical-lift-transfer",
+  name: "Vertical Lifting and Transferring Unit",
+  category: "Automated",
+  short: "System for vertical movement and transfer of materials between levels.",
+  features: ["Space saving", "Automated control", "High efficiency", "Safe operation"],
+  image: "/products/vertical-lift.png"
+},
   {
     id: "scraper-chip-conveyor",
     name: "Scraper Type Chip Conveyor",
     category: "Conveyors",
     short: "Scrap handling conveyor for press shops and automotive plants.",
-    features: ["24x7 operation", "Heavy scrap handling", "Long lifespan", "High reliability"],
+    description: "High speed, high productivity presses need an equally efficient and reliable scrap disposal system in place to ensure uptime of these expensive machines. The heavy scrap generated during pressing operations needs to be continuously removed and disposed of in a 24x7 working environment. V Tech Conveyors offers scrap management systems that take up this challenge in press shops of the automotive industry. Our conveyors are so robust and reliable that many installations in the country are running for the past two decades without a breakdown.",
+    features: ["24x7 operation", "Heavy scrap handling", "Long lifespan", "High reliability", "Robust construction", "Continuous operation"],
+    specifications: [
+      "Heavy-duty welded frame",
+      "High-capacity chain drive",
+      "Customizable length and width",
+      "Carbon steel or stainless steel construction"
+    ],
+    applications: ["Press shops", "Stamping operations", "Automotive industry", "Metal scrap handling", "High-speed pressing"],
     image: "/products/scraper-chip-conveyor.jpg",
   },
   {
@@ -138,7 +236,15 @@ export const PRODUCTS: Product[] = [
     name: "Magnetic Chip Conveyor",
     category: "Conveyors",
     short: "Ferrous chip handling with coolant recovery system.",
-    features: ["Magnetic separation", "Coolant recovery", "Energy efficient", "Durable"],
+    description: "These conveyors are mainly used for small wet ferrous chips and help in recovering the costly fluids used for machining. When chips fall on the magnetic conveyor (stainless steel), which stands still while the conveyor runs below, magnets connected to the chain attract and carry chips to the trolley. Oil and coolant are recovered back to the tank, making this system highly efficient for machining operations.",
+    features: ["Magnetic separation", "Coolant recovery", "Energy efficient", "Durable", "Stainless steel construction", "High filtration"],
+    specifications: [
+      "Material: Stainless Steel",
+      "Pitch Width: 38.1mm",
+      "Speed Motor: 1/4Hp (0.2kw)",
+      "Flow rate of pump: 25-300 L/M"
+    ],
+    applications: ["Machining centers", "Grinding operations", "Coolant recovery", "Chip separation", "Metal working"],
     image: null,
   },
   {
@@ -179,7 +285,7 @@ export const PRODUCTS: Product[] = [
     category: "Conveyors",
     short: "Widely used conveyor for bulk material handling.",
     features: ["High efficiency", "Flexible", "Durable", "Low maintenance"],
-    image: null,
+    image: "/products/belt-conveyor.png",
   },
   {
     id: "skate-wheel",
@@ -203,7 +309,7 @@ export const PRODUCTS: Product[] = [
     category: "Material Handling",
     short: "Conveyor for truck loading/unloading.",
     features: ["Heavy load", "UV resistant", "Corrosion resistant", "Durable"],
-    image: null,
+    image: "./products/truck-loader.png",
   },
   {
     id: "wire-mesh",
@@ -211,7 +317,7 @@ export const PRODUCTS: Product[] = [
     category: "Conveyors",
     short: "Conveyor for high temperature and drying applications.",
     features: ["Heat resistant", "Chemical resistant", "Durable", "Air flow design"],
-    image: null,
+    image: "/products/mesh.png",
   },
   {
     id: "screw-conveyor",
@@ -275,7 +381,7 @@ export const PRODUCTS: Product[] = [
     category: "Special Purpose Machines",
     short: "Hydraulic lifting platform.",
     features: ["High capacity", "Safe", "Smooth operation", "Durable"],
-    image: null,
+    image: "/products/hydraulic-lift.png",
   },
   {
     id: "oil-skimmer",

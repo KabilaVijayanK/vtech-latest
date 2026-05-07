@@ -10,7 +10,7 @@ export const Wordmark = ({ className = "" }: { className?: string }) => (
   <div className={`flex items-center gap-2.5 ${className}`}>
     
     {/* 👇 size inga control aagum */}
-    <VLogo className="h-14 w-14" />
+    <VLogo className="h-20 w-20" />
 
     <div className="leading-none">
       <div className="font-display font-bold text-xl tracking-tight text-ink">

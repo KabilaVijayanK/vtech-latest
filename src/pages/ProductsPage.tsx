@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import { PRODUCTS, ProductCategory, PageKey } from "@/lib/site";
@@ -19,6 +20,7 @@ const FILTERS: ("All" | ProductCategory)[] = [
 ];
 
 export const ProductsPage = ({ onNavigate }: { onNavigate: (p: PageKey) => void }) => {
+  const navigate = useNavigate();
   const [filter, setFilter] = useState<(typeof FILTERS)[number]>("All");
   const list = filter === "All" ? PRODUCTS : PRODUCTS.filter((p) => p.category === filter);
 
@@ -69,10 +71,10 @@ export const ProductsPage = ({ onNavigate }: { onNavigate: (p: PageKey) => void 
                   ))}
                 </ul>
                 <button
-                  onClick={() => onNavigate("contact")}
+                  onClick={() => navigate(`/product/${p.id}`)}
                   className="mt-6 font-label text-[11px] text-primary inline-flex items-center gap-2 self-start group/btn"
                 >
-                  Enquire Now <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
+                  Learn More<ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
                 </button>
               </article>
             </Reveal>
