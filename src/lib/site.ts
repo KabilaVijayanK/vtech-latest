@@ -133,7 +133,7 @@ export const PRODUCTS: Product[] = [
       "Material: Carbon Steel / Stainless Steel"
     ],
     applications: ["Machining industries", "Press shops", "Chip handling", "Metal cutting operations"],
-    image: "/products/hinge-conveyor.jpg",
+    image: "/products/hinge-conveyor.png",
   },
   {
   id: "inspection-table",
@@ -223,13 +223,13 @@ export const PRODUCTS: Product[] = [
     description: "High speed, high productivity presses need an equally efficient and reliable scrap disposal system in place to ensure uptime of these expensive machines. The heavy scrap generated during pressing operations needs to be continuously removed and disposed of in a 24x7 working environment. V Tech Conveyors offers scrap management systems that take up this challenge in press shops of the automotive industry. Our conveyors are so robust and reliable that many installations in the country are running for the past two decades without a breakdown.",
     features: ["24x7 operation", "Heavy scrap handling", "Long lifespan", "High reliability", "Robust construction", "Continuous operation"],
     specifications: [
-      "Heavy-duty welded frame",
-      "High-capacity chain drive",
-      "Customizable length and width",
-      "Carbon steel or stainless steel construction"
+      "frame:Heavy-duty welded frame",
+      "Drive:High-capacity chain drive",
+      "Size: Customizable length and width",
+      "Steel :Carbon steel or stainless steel construction"
     ],
     applications: ["Press shops", "Stamping operations", "Automotive industry", "Metal scrap handling", "High-speed pressing"],
-    image: "/products/scraper-chip-conveyor.jpg",
+    image: "/products/scraper-chip-conveyor.png",
   },
   {
     id: "magnetic-chip-conveyor",
@@ -245,39 +245,61 @@ export const PRODUCTS: Product[] = [
       "Flow rate of pump: 25-300 L/M"
     ],
     applications: ["Machining centers", "Grinding operations", "Coolant recovery", "Chip separation", "Metal working"],
-    image: null,
+    image: "/products/magnetic-chip-conveyor.png",
   },
   {
     id: "coolant-magnetic-separator",
     name: "Coolant Magnetic Separator",
     category: "Filtration Systems",
     short: "Removes ferrous particles from coolant.",
+    description: "Magnetic Separator clarifies offer excellent means of filtering for ferrous particles. WherePurification is required and contaminates differ in form, size and composition, MagneticSeparator are recommended for Grinding, Honing, Transfer-lines and machining centre. It Also can be used for rolling mills for filtering coolant which helps to improve the surface finish of the sheets.",
+    specifications: [
+      "Shell Length: 1200mm",
+      "Capacity: 10-20 t/h",
+      "Power: 1.1 KW",
+      "Weight: 1.5 t"
+    ],
+    applications: ["Machining centers", "Grinding operations", "Coolant purification", "Ferrous particle removal", "Surface finish improvement"],
     features: ["Improves surface finish", "High filtration", "Industrial use", "Robust design"],
-    image: null,
+    image: "/products/coolant-magnetic-separator.png",
   },
   {
     id: "gravity-roller",
     name: "Gravity Roller Conveyor",
     category: "Conveyors",
     short: "Manual conveyor for cartons and goods movement.",
+    description: "We offer optimum quality Gravity Roller Conveyors. Roller conveyor is suitable for all types ofCartons, bags, salvers cargoes, conveying. It can transport single heavy thing, or can bear More impact load. It has big throughput, high speed, light operation, and let multi species of Shunt delivery from col limitation come true.",
+    specifications: [
+      "Roller diameter: 19~165.2mm",
+      "Roller width: 50~2000mm",
+    ],
+    applications: ["Warehousing", "Distribution centers", "Manufacturing lines", "Packaging operations", "Material handling"],
     features: ["No power needed", "Simple structure", "High reliability", "Easy maintenance"],
-    image: null,
+    image: "/products/gravity-roller.png",
   },
   {
     id: "powered-roller",
     name: "Powered Roller Conveyor",
     category: "Automated",
     short: "Motorized conveyor for automation and logistics.",
-    features: ["Forward/reverse", "Impact resistant", "Modular", "Low maintenance"],
-    image: null,
+    description: "Automation (Powered) roller conveyors are used for material handling and for any kind of Automation application. We are instrumental in developing high performing Chain Drive Roller Conveyor.These conveyors are designed for transport of boxed unit load with flat bottom in food Processing industry, chemical industry and pharmaceutical industry. Featuring assurance offer liable running and economic performance, the offered roller Conveyors are technologically advanced and can be used for both forward and reverseTransport. Developed from finest grade raw materials under strict super visions, these Conveyors can be ordered at the best price from us.",
+    specifications: [
+      "Length of Conveyor (As per requirement)",
+      "Width of Working Surface",
+      "Height of Conveyor 500 Formed Steel for Frame 120×30×3",
+    ],
+    applications: ["Automated manufacturing lines", "Logistics and distribution centers", "Packaging operations", "Material handling", "Food processing"],  
+    features: ["Modularized design", "Impact resistant", "Beautiful appearance", "Maintenance free"],
+    image: "/products/powered-roller.png",
   },
   {
     id: "ev-assembly-line",
     name: "Electric Vehicle Assembly Line Conveyor",
     category: "Special Purpose Machines",
     short: "Assembly conveyor for EV manufacturing lines.",
+    description:"We are reckoned as prominent entity presenting innovative designs of Slat Chain Conveyor.Owing to its continuous moving surface, the offered conveyors become the best choice for Material handling at packaging lines. Featuring special attachment to develop the conveyors In L, C, and U type formation, the offered design comes with slats attached to the chain. We are procuring industry approved materials to manufacture the high performing conveyors,Which can be ordered in customized size and length specifications at a competitive price Electric Vehicle Assembly Line Slat Type Chain Conveyor are widely used to assemble Electric Scooters, electric Bikes to increase the plant productivity, Our Vehicle Assembly line conveyor",
     features: ["Heavy duty", "Custom layouts", "High productivity", "Long life"],
-    image: null,
+    image: "/products/ev-assembly.png",
   },
   {
     id: "belt-conveyor",
@@ -293,7 +315,7 @@ export const PRODUCTS: Product[] = [
     category: "Conveyors",
     short: "Portable conveyor for loading/unloading.",
     features: ["Adjustable height", "Portable", "Modular", "Easy maintenance"],
-    image: null,
+    image: "/products/skate-wheel.png",
   },
   {
     id: "flexible-powered",
@@ -301,7 +323,7 @@ export const PRODUCTS: Product[] = [
     category: "Automated",
     short: "Motorized flexible conveyor for logistics.",
     features: ["Self tracking", "Start/stop control", "Compact", "Efficient"],
-    image: null,
+    image: "/products/flexible-powered.png",
   },
   {
     id: "truck-loader",
@@ -325,7 +347,7 @@ export const PRODUCTS: Product[] = [
     category: "Conveyors",
     short: "Powder material transport conveyor.",
     features: ["Uniform flow", "Custom size", "Wear resistant", "High precision"],
-    image: null,
+    image: "/products/screw-conveyor.png",
   },
   {
     id: "pallet-dispenser",
@@ -333,7 +355,7 @@ export const PRODUCTS: Product[] = [
     category: "Material Handling",
     short: "Automatic pallet stacking system.",
     features: ["Heavy duty", "Multi direction output", "Safe", "Low maintenance"],
-    image: null,
+    image: "/products/pallet-dispenser.png",
   },
   {
     id: "overhead-conveyor",
@@ -341,7 +363,7 @@ export const PRODUCTS: Product[] = [
     category: "Conveyors",
     short: "Overhead system for industrial movement.",
     features: ["Durable", "Smooth transport", "Custom layout", "Balanced load"],
-    image: null,
+    image: "/products/overhead-conveyor.png",
   },
   {
     id: "chain-belt-conveyor",
@@ -349,7 +371,7 @@ export const PRODUCTS: Product[] = [
     category: "Conveyors",
     short: "Heavy-duty conveyor for recycling and industrial use.",
     features: ["Heavy duty", "Flexible", "Modular frame", "Variable speed"],
-    image: null,
+    image: "/products/chain-belt-conveyor.png",
   },
   {
     id: "pallet-chain-conveyor",
@@ -357,7 +379,7 @@ export const PRODUCTS: Product[] = [
     category: "Material Handling",
     short: "Handles heavy pallet transport.",
     features: ["High load capacity", "Impact resistant", "Smooth transport", "Durable"],
-    image: null,
+    image: "/products/pallet-chain-conveyor.png",
   },
   {
     id: "ball-transfer-table",
@@ -365,7 +387,7 @@ export const PRODUCTS: Product[] = [
     category: "Material Handling",
     short: "Manual rotation and positioning system.",
     features: ["Easy movement", "Multi-direction", "Flexible handling", "Industrial use"],
-    image: null,
+    image: "/products/ball-transfer.png",
   },
   {
     id: "modular-belt-conveyor",
@@ -373,14 +395,16 @@ export const PRODUCTS: Product[] = [
     category: "Conveyors",
     short: "Modular belt system for heavy applications.",
     features: ["Heat resistant", "Easy repair", "Strong", "Adjustable speed"],
-    image: null,
+    image: "/products/modular-belt-conveyor.png",
   },
   {
     id: "scissor-lift",
     name: "Hydraulic Scissor Lift",
     category: "Special Purpose Machines",
     short: "Hydraulic lifting platform.",
-    features: ["High capacity", "Safe", "Smooth operation", "Durable"],
+    description:"V Tech Conveyor scissor lifts are the ultimate in strength, convenience and reliability with full hydraulic Powered functions controlled by a push of a button. Available in lift capacities from 1,000 to 20,000 kg. And standard deck sizes ranging to 2400mm wide x 6000mm long. Standard features include safety toe, Fall protection, hinged bridge, handrails, barrier chains and a comprehensive warranty.",
+    
+    features: ["Superior structure for strength and durability "],
     image: "/products/hydraulic-lift.png",
   },
   {
@@ -389,7 +413,7 @@ export const PRODUCTS: Product[] = [
     category: "Oil Skimmers",
     short: "Separates oil from coolant.",
     features: ["Improves coolant life", "Efficient", "Industrial grade", "Low maintenance"],
-    image: null,
+    image: "/products/oil-skimmer.png",
   },
   {
     id: "strapping-machine",
@@ -397,7 +421,7 @@ export const PRODUCTS: Product[] = [
     category: "Automated",
     short: "Packaging machine for strapping goods.",
     features: ["Auto feeding", "Safe voltage", "Easy operation", "Modular"],
-    image: null,
+    image: "/products/strapping-machine.png",
   },
   {
     id: "vertical-conveyor",
@@ -405,7 +429,7 @@ export const PRODUCTS: Product[] = [
     category: "Conveyors",
     short: "Vertical transport conveyor for heavy goods.",
     features: ["High load capacity", "Vertical movement", "Custom speed", "Durable"],
-    image: null,
+    image: "/products/vertical-conveyor.png",
   },
   {
     id: "inverted-power-free",
@@ -413,15 +437,29 @@ export const PRODUCTS: Product[] = [
     category: "Automated",
     short: "Advanced conveyor for accumulation and sorting.",
     features: ["Programmable", "High strength", "Flexible", "Efficient"],
-    image: null,
+    image: "/products/inverted-power-free.png",
   },
   {
     id: "spiral-conveyor",
     name: "Spiral Gravity Roller Conveyor",
     category: "Conveyors",
     short: "Compact conveyor for vertical transport.",
+    description: "The compact spiral conveyor is a compact and versatile elevating solution. Compact Spiral conveyors can be Designed to carry product between floors and machines or over aisles. Designed with a uniform slope, the Compact Spiral conveyor ensures smooth operation without disturbing the product. With its ability to move Items from one point to another with minimal effort required on the part of the operator, compact Spiral Conveyors are ideal for use in many industries, including food service and manufacturing.",
+    specifications: [
+      "Roller Material: Steel",
+      "Capacity: 50 Kg/Feet",
+      "Belt Width: 600 mm",
+      "Conveying Speed: 60 m/min",
+      "Height: 15 Mt’s",
+      "Phase: Three Phase",
+      "Voltage: 420 V",
+      "Frequency Range: 50-60Hz",
+      "Country of Origin: Made in India",
+      "Minimum Order Quantity: 15 Pieces"
+    ],
+    applications: ["Food processing", "Manufacturing lines", "Packaging operations", "Material handling", "Vertical transport"],
     features: ["Space saving", "Low cost", "Smooth operation", "Efficient"],
-    image: null,
+    image: "/products/spiral-conveyor.png",
   },
   {
     id: "centralized-chip",
@@ -429,7 +467,7 @@ export const PRODUCTS: Product[] = [
     category: "Conveyors",
     short: "PLC based scrap handling system.",
     features: ["Automated", "High capacity", "Continuous operation", "Customizable"],
-    image: null,
+    image: "/products/centralized-chip.png",
   },
   {
     id: "dws-system",
@@ -437,7 +475,7 @@ export const PRODUCTS: Product[] = [
     category: "Automated",
     short: "Dimensioning, weighing and scanning system.",
     features: ["High accuracy", "Automation", "ERP integration", "Time saving"],
-    image: null,
+    image: "/products/dws-system.png",
   },
   {
     id: "sortation-system",
@@ -445,7 +483,7 @@ export const PRODUCTS: Product[] = [
     category: "Automated",
     short: "Automated sorting and routing system.",
     features: ["High speed", "Accurate", "Low manpower", "Efficient"],
-    image: null,
+    image: "/products/sortation-system.png",
   },
   {
     id: "paper-band-filter",
@@ -453,15 +491,21 @@ export const PRODUCTS: Product[] = [
     category: "Filtration Systems",
     short: "Coolant filtration system for industries.",
     features: ["High purification", "Handles all particles", "Efficient", "Compact"],
-    image: null,
+    image: "/products/paper-band-filter.png",
   },
   {
     id: "telescopic-cover",
     name: "Telescopic Covers",
     category: "Machine Protection",
     short: "Protects machine guideways.",
+    description: "The highest procession is used to make the telescopic steel covers and especially adapted for Totally machine requirement. Telescopic covers are used in the industries to protect the Guide-ways of machine for any direction of motion. Generally we make the telescopic steel Cover as walk on various with horizontal motion. In Species cases where space is limited or Walking on is definitely impossible that the cover cannot be  made with sufficient space than A non-walk on type cover is provided for the machine.",
+    specifications: [
+      "Max speed: 100 metre/min",
+      "Material: Nylon & Steel",
+    ],
+    applications: ["Machine tool protection", "Guideway protection", "Industrial machinery", "Space constrained applications"],
     features: ["High speed", "Durable", "Compact", "Custom design"],
-    image: null,
+    image: "/products/telescopic-cover.png",
   },
   {
     id: "bellow-cover",
@@ -469,7 +513,7 @@ export const PRODUCTS: Product[] = [
     category: "Machine Protection",
     short: "Flexible protection cover for machines.",
     features: ["Easy install", "Flexible", "Durable", "Multi-direction"],
-    image: null,
+    image: "/products/bellow-cover.png",
   },
   {
     id: "cable-drag-chain",
@@ -477,15 +521,16 @@ export const PRODUCTS: Product[] = [
     category: "Machine Protection",
     short: "Protects cables and hoses.",
     features: ["Smooth movement", "Durable", "Flexible", "Industrial use"],
-    image: null,
+    image: "/products/cable-drag-chain.png",
   },
   {
     id: "rollway-cover",
     name: "Rollway Cover",
     category: "Machine Protection",
     short: "Protects machine slides.",
+    description: "Rollway covers are used to protect slide and guide ways of any kind of machine. The Rollway  Covers can be mounted in horizontal, vertical and for cross slide applications.",
     features: ["Compact", "High speed", "Durable", "Low maintenance"],
-    image: null,
+    image: "/products/rollway-cover.png",
   },
   {
     id: "apron-cover",
@@ -493,7 +538,7 @@ export const PRODUCTS: Product[] = [
     category: "Machine Protection",
     short: "Heavy-duty machine protection cover.",
     features: ["Heat resistant", "Flexible", "Compact", "Durable"],
-    image: null,
+    image: "/products/apron-cover.png",
   },
   {
     id: "dust-collector",
@@ -501,7 +546,7 @@ export const PRODUCTS: Product[] = [
     category: "Filtration Systems",
     short: "Industrial dust extraction system.",
     features: ["Cost effective", "High efficiency", "Pollution control", "Durable"],
-    image: null,
+    image: "/products/dust-collector.png",
   },
 ];
 

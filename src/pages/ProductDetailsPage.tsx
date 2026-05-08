@@ -133,12 +133,12 @@ const S: Record<string, any> = {
     marginBottom: "1.1rem",
   },
   h1: {
-    fontFamily: "'DM Serif Display', Georgia, serif",
+    fontFamily: "'Barlow', sans-serif",
     fontSize: "2.2rem",
     lineHeight: 1.15,
     color: "#1a1a1a",
     marginBottom: "0.65rem",
-    fontWeight: 400,
+    fontWeight: 700,
   },
   pshort: {
     fontSize: "0.95rem",
@@ -339,10 +339,10 @@ const S: Record<string, any> = {
     flexWrap: "wrap",
   },
   ctaBannerH: {
-    fontFamily: "'DM Serif Display', Georgia, serif",
+    fontFamily: "'Barlow', sans-serif",
     fontSize: "1.7rem",
     color: "#fff",
-    fontWeight: 400,
+    fontWeight: 700,
     marginBottom: "0.4rem",
   },
   ctaBannerP: { fontSize: "0.9rem", color: "rgba(255,255,255,0.55)", maxWidth: 460 },
